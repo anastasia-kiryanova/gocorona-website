@@ -1,0 +1,28 @@
+.block-text__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  color: #000000;
+}
+
+.block-text__title:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.block-text__title span {
+  color: #EC5863;
+}
+
+.block-text__title_blue span {
+  color: #4285F4;
+}
+
+.block-text__text:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 767.98px) {
+  .block-text__title {
+    font-size: 34px;
+  }
+}

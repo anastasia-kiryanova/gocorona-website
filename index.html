@@ -14,32 +14,71 @@
   <link rel="stylesheet" href="./css/base.css">
 
   <!--Blocks-->
-  <link rel="stylesheet" href="./css/main.css">
-  
+  <link rel="stylesheet" href="./css/blocks/btn.css">
+  <link rel="stylesheet" href="./css/blocks/block-text.css">
+  <link rel="stylesheet" href="./css/blocks/header.css">
+  <link rel="stylesheet" href="./css/blocks/home.css">
+  <link rel="stylesheet" href="./css/blocks/stay-safe.css">
 </head>
 <body>
   <div class="wrapper">
-    <header class="header">
-      <div class="header__container">
+    <header id="open" class="header">
+      <div id="close" class="header__container">
         <a href="#" class="header__logo">
           <img src="./img/logo.svg" alt="logo">
         </a>
-        <nav class="header__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Support</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Contact us</a></li>
-          </ul>
-        </nav>
+        <div class="header__menu menu">
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Features</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Support</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact us</a></li>
+            </ul>
+          </nav>
+        </div>
         <div class="header__button">
           <a href="#" class="button button_blue">Download</a>
+          <a href="#open" class="icon-menu"><span></span></a>
+          <a href="#close" class="close-icon-menu"></a>
         </div>
       </div>
     </header>
 
     <main class="main">
-      
+      <section class="home">
+        <div class="home__container">
+          <div class="home__content">
+            <div class="home__block-text block-text">
+              <h1 class="block-text__title block-text__title_blue">
+                Take care of yours family’s <span>health.</span>
+              </h1>
+              <div class="block-text__text">All in one destination for COVID-19 health queries. Consult 10,000+ health workers about your concerns.</div>
+              <a href="#" class="block-text__button button">Get started</a>
+            </div>
+          </div>
+          <div class="home__image">
+            <img src="./img/home/01.svg" alt="A doctor with a child">
+          </div>
+          <div class="home__play-button">
+            <a href="#" class="play-button-home">
+              <div class="play-button-home__icon">
+                <img src="./img/home/02.svg" alt="icon: play">
+              </div>
+              <div class="play-button-home__body">
+                <div class="play-button-home__title">Stay safe with GoCorona</div>
+                <div class="play-button-home__text">Watch Video</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stay-safe">
+        <div class="stay-safe__container">
+          
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
